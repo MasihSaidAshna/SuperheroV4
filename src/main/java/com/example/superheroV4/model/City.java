@@ -1,4 +1,4 @@
-package com.example.superhero_v4.model;
+package com.example.superheroV4.model;
 
 public class City {
     private int id;

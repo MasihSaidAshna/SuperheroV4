@@ -1,4 +1,4 @@
-package com.example.superhero_v4.repositories;
+package com.example.superheroV4.repositories;
 
 
 import java.io.*;
@@ -17,10 +17,9 @@ public class DBManager {
         try (InputStream input = new FileInputStream("src/main/resources/application.properties")) {
             Properties properties = new Properties();
             properties.load(input);
-            url = properties.getProperty("url");
-            user = properties.getProperty("user");
-            pwd = properties.getProperty("password");
-
+            url = properties.getProperty("spring.datasource.url");
+            user = properties.getProperty("spring.datasource.username");
+            pwd = properties.getProperty("spring.datasource.password");
         }
         catch (IOException ex){
             ex.printStackTrace();

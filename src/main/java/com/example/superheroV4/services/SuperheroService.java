@@ -1,7 +1,7 @@
-package com.example.superhero_v4.services;
+package com.example.superheroV4.services;
 
 import org.springframework.stereotype.Service;
-import com.example.superhero_v4.repositories.SuperheroRepository;
+import com.example.superheroV4.repositories.SuperheroRepository;
 
 @Service
 public class SuperheroService {
